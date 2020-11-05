@@ -17,6 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+  if (votingAge >= 18){
+console.log(true);
+  }
+  
+
 
 
 
@@ -58,9 +64,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a,b){
+  return a * b;
+    }
+
+    multiply(2,5);
 
 
 
@@ -74,9 +82,12 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears){
+return humanYears * 7;
 }
+
+dogYears(26);
+
 
 
 
@@ -107,9 +118,33 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight, age){
+//   //adult dog 
+  if (age >= 1 && weight <=5 ){
+    return .05 * weight;
   }
+else if (weight <=10){
+  return .04 * weight;
+}
+else if (weight <=15){
+  return .03 * weight; 
+}
+else if (weight >15 ){
+  return .02 * weight; 
+}
+//puppie dog
+
+else if (age <=.16 && age <= .33){
+return .10 * weight;
+}
+if (age <=.58 ){
+return .05 * weight;
+}
+if (age <1 ){
+return .04 *weight 
+}
+}
+  hungryDog(15,1);
 
 
 
@@ -132,10 +167,29 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
+let computer = Math.floor(Math.random()*3);
+let user = Math.floor(Math.random()*3);
+
 function game(user, computer){
-    /*add your code here*/
+  if (computer <= 0){
+  computer = 'rock'
+  }
+  else if (computer <=1){
+    computer='scissor'
+  }
+  else if (computer <=2){
+    computer= 'paper'
+  }
+  if (user <=0){
+    user= 'paper'
+  }
+  else if (user <=1){
+    user = 'rock'
+  }
+else if (user <=2)
+  user= 'scissor'
 }
-  
+  if (user ===0 && computer ===)
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -179,10 +233,13 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(a){
+ for(let i=a; i>=5; i--)
   }
 
+  console.log(annoyingSong(5));
+
+  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -199,9 +256,28 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(grades){
+  if (grades >=90 && grades <=100){
+    return "you got a A" ;
   }
+else if (grades >=80 && grades <=89){
+  return "you got a B" ;
+}
+else if (grades >=70 && grades <=79){
+  return "you got a C" ;
+}
+else if (grades >=60 && grades<=69){
+  return "you got a D" ; 
+}
+else if ( grades<60) {
+  return "you got a F" ; 
+}
+
+}
+  grade(72);
+
+
+    
   
   
   
