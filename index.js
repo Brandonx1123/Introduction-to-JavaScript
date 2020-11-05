@@ -168,29 +168,41 @@ Use the game function below to do the following:
 */
 
 let computer = Math.floor(Math.random()*3);
-let user = Math.floor(Math.random()*3);
+let user = ''
+// const rock= 0;
+// const scissors= 1;
+// const paper =2;
 
 function game(user, computer){
   if (computer <= 0){
-  computer = 'rock'
+  return 'rock';
   }
-  else if (computer <=1){
-    computer='scissor'
+  else if (computer <= 1){
+    return 'scissor';
   }
   else if (computer <=2){
-    computer= 'paper'
+    return  'paper';
   }
   if (user <=0){
-    user= 'paper'
+    return 'paper';
   }
-  else if (user <=1){
-    user = 'rock'
+  else if (user <= 1){
+    return  'rock';
   }
-else if (user <=2)
-  user= 'scissor'
+else if (user <= 2){
+  return  'scissor';
 }
-  if (user ===0 && computer ===)
-  
+  if (user ==='rock' && computer ==='scissor' || user === 'paper' && computer === 'rock' || user === 'scissor' && computer === 'paper'){
+    return 'you win!';
+  }
+else if (user === 'paper' && computer === 'scissor' || user === 'rock' && computer === 'paper' || user === 'scissor' && computer === 'rock') {
+  return 'you lose!';
+}
+  else if (user === 'paper' && computer === 'paper' || user === 'rock' && computer == 'rock' || user === 'scissor' && computer === 'scissor'){
+    return "it's a tie";
+  } 
+}
+  console.log(game(user,computer));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -203,9 +215,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(KM){
+  if(KM );
+}
+  
 
 
 
@@ -234,8 +247,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(a){
- for(let i=a; i>=5; i--)
-  }
+ for(let i=a; i>=5; i--){
+
+ }
+
 
   console.log(annoyingSong(5));
 
