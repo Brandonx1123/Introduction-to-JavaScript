@@ -215,9 +215,14 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(KM){
-  if(KM );
+function miles(kilometers){
+ distance = kilometers * 0.627;
+  return distance;
 }
+
+miles(40);
+  //divide by 8 and multiply by 5
+
   
 
 
@@ -230,9 +235,12 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(Centimeter){
+    distance= Centimeter * 30.48;
+    return distance;
   }
+
+  feet(20);
  
 
 
@@ -247,7 +255,7 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(a){
- for(let i=a; i>=5; i--){
+ for(let i=a; i>=5; i--){}
 
  }
 
@@ -332,5 +340,5 @@ export default{
     miles,
     feet,
     annoyingSong,
-    grade
+    grade,
 }
