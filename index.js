@@ -255,7 +255,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(a){
- for(let i=a; i>=5; i--){}
+ for(let i=a; i>=5; i--){
+ return (`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1}bottles of soda on the wall`);
+  
+ }
 
  }
 
